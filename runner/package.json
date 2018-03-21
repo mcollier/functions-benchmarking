@@ -1,0 +1,20 @@
+{
+  "name": "function-benchmark-runner",
+  "version": "0.0.1",
+  "description": "",
+  "main": "runner.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.85.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^9.4.7",
+    "@types/request": "^2.47.0",
+    "@types/request-promise": "^4.1.41"
+  }
+}

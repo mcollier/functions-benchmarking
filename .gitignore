@@ -1,3 +1,6 @@
+/runner/lib
+/runner/results
+
 # Logs
 logs
 *.log
