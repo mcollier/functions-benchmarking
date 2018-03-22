@@ -13,7 +13,9 @@ interface BenchmarkingResult {
     numModules?: number,
     delay?: number,
     fromZip?: boolean,
-    scaleEnabled?: boolean
+    scaleEnabled?: boolean,
+    language?: 'node' | 'cs' | 'csx',
+    platform?: 'azfun' | 'awslambda' | 'googlefun'
 }
 
 export async function runBenchmark(config: RunConfig) {
@@ -53,6 +55,8 @@ export async function runBenchmark(config: RunConfig) {
         res.delay = config.delay;
         res.fromZip = config.fromZip;
         res.scaleEnabled = config.scaleEnabled;
+        res.language = config.language;
+        res.platform = config.platform;
 
         // Save to file
         if (!fs.existsSync('./results')) {

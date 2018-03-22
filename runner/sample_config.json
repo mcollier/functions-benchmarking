@@ -4,5 +4,7 @@
     "delay": 60,
     "fromZip": false,
     "scaleEnabled": false,
-    "uri": ""
+    "uri": "",
+    "language": "node",
+    "platform": "azfun"
 }
