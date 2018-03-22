@@ -5,6 +5,7 @@ import { RunConfig } from './config';
 
 interface BenchmarkingResult {
     requestId: string,
+    requestTime: number,
     benchmarks: {
         name: string,
         type: "require" | "other",
@@ -51,6 +52,7 @@ export async function runBenchmark(config: RunConfig) {
             type: 'other',
             duration: funcRes.elapsedTime
         });
+        res.requestTime = funcRes.timingStart;
         res.numModules = config.numModules;
         res.delay = config.delay;
         res.fromZip = config.fromZip;
