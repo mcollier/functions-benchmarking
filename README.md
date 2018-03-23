@@ -2,7 +2,7 @@
 Measuring cold start times for Azure Functions
 
 ## Hosting the Function
-The [function code](/function/) should be hosted as an Azure Function using a Consumption plan. Make sure you `npm install` the required modules (`alexa-sdk`, `request`, `async`, and `underscore` depending on how many you want to test).
+The [function code](/functions/azure-node/) should be hosted as an Azure Function using a Consumption plan. Make sure you `npm install` the required modules (`alexa-sdk`, `request`, `async`, and `underscore` depending on how many you want to test).
 
 ## Running
 
